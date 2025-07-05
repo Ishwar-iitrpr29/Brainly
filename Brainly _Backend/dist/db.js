@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.LinkModel = exports.ContentModel = exports.UserModel = exports.dbConnect = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 const mongoose_2 = require("mongoose");
-exports.dbConnect = mongoose_1.default.connect("mongodb+srv://Ishhwarr:Ishwar_123@cluster0.33fxw.mongodb.net/Brainly");
+exports.dbConnect = mongoose_1.default.connect("");
 const UserSchema = new mongoose_2.Schema({
     username: { type: String, unique: true },
     password: String,
